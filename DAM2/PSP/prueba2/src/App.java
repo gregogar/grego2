@@ -16,8 +16,8 @@ public class App {
 
                     break;
             }
-            while (!flag)
-                ;
+            while (!flag);
+                
         } while (!flag);
     }
 }
