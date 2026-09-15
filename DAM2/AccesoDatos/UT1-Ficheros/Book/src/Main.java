@@ -5,7 +5,7 @@ public class Main {
     public static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) throws Exception {
-        BookDAO dao = new BookDAO();
+        BookDAO dao = new BookDAO("AccesoDatos/UT1-Ficheros/Book/src/books.txt");
         boolean ok = true;
         while (ok) {
             System.out.println("=====================");
@@ -16,12 +16,16 @@ public class Main {
             System.out.println("=====================");
             System.out.println("(S)alir");
             System.out.println("=====================");
-            String option = sc.nextLine();
-            option.toUpperCase();
+            String option = sc.nextLine().toUpperCase();
 
             switch (option) {
                 case "C":
-
+                    System.out.println(" Introduce el nombre del libro: ");
+                    String name = sc.nextLine();
+                    System.out.println(" Introduce el ISBN del libro: ");
+                    String ISBN = sc.nextLine();
+                    Book b = new Book(name, ISBN);
+                    dao.saveBook(b);
                     break;
                 case "R":
 
@@ -30,7 +34,7 @@ public class Main {
 
                     break;
                 case "D":
-                    
+
                     break;
                 case "S":
                     System.out.println(" CHAO PESCAO");

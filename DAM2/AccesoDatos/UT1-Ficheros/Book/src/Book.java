@@ -1,9 +1,9 @@
 public class Book {
 
     private String nombre;
-    private int ISBN;
+    private String ISBN;
 
-    public Book(String nombre, int iSBN) {
+    public Book(String nombre, String iSBN) {
         this.nombre = nombre;
         ISBN = iSBN;
     }
@@ -16,11 +16,11 @@ public class Book {
         this.nombre = nombre;
     }
 
-    public int getISBN() {
+    public String getISBN() {
         return ISBN;
     }
 
-    public void setISBN(int ISBN) {
+    public void setISBN(String ISBN) {
         this.ISBN = ISBN;
     }
 
