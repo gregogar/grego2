@@ -1,0 +1,3 @@
+vamos a trabajar con ficheros binarios normales como los .dat, .png, .jpg
+tmbien con los JSON para bases de datos
+tmbien con XML y con MAVEN 
